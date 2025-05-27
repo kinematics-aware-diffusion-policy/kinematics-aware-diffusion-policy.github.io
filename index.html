@@ -12,18 +12,6 @@
   <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
 
-  <script>
-    function updateInteractive() {
-      var task = document.getElementById("interactive-buttons").value;
-      console.log("interactive", task);
-      var fig = document.getElementById("interactive-figure-0");
-      fig.src = "media/figures/" + task + "-0.jpg";
-      var fig = document.getElementById("interactive-figure-1");
-      fig.src = "media/figures/" + task + "-1.jpg";
-      var html = document.getElementById("interactive-html");
-      html.src = "media/interactive/" + task + ".html";
-    }
-  </script>
 
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
         rel="stylesheet">
@@ -73,7 +61,7 @@
     <div class="hero-body">
       <div class="container">
         <div class="columns is-vcentered  is-centered">
-          <img src='media/figures/adaptigraph-method.jpg'>
+          <img src='figures/top_fig.png'>
           </br>
         </div>
         <br>
@@ -100,9 +88,13 @@
           </div>
           <br>
           <h2 class="title is-3">Video</h2>
-          <div class="publication-video">
+          <video id="teaser" autoplay muted loop height="100%" width="100%">
+              <source src="videos/ral_submission.mp4" type="video/mp4">
+            </video>
+
+          <!-- <div class="publication-video">
             <iframe src="https://www.youtube.com/embed/DQHxb4saxQo" frameborder="0" allow="autoplay; encrypted-media"
-              allowfullscreen></iframe>
+              allowfullscreen></iframe> -->
           <!-- <video id="teaser" autoplay muted loop height="100%" width="100%">
             <source src="media/videos/main.mp4"
                     type="video/mp4">
@@ -120,8 +112,7 @@
 
         <h2 class="title is-3">Method Overview</h2>
         <div class="content has-text-justified">
-          <p>In “AdaptiGraph”, we learn a graph-based neural dynamics model that adapts to objects with varying dynamics. 
-            We employ physical property conditioning, and perform inverse optimization to estimate the physical properties of unseen objects through interaction.
+          <p>Overview of <b>Kinematics-Aware Diffusion Policy (KADP)</b>. Taking the encoded 3D visual representations, the 3D robot nodes and time embeddings as input, diffusion model predicts the denoised 3D node trajectory iteratively. For execution, the joint angle commands are computed through an optimization-based whole-body inverse kinematics solver.
           </p>
         </div>
         <div class="columns is-centered has-text-centered">
@@ -131,12 +122,12 @@
                     type="video/mp4">
           </video> -->
           <div class="column is-fullwidth">
-            <img src="media/figures/method.jpg" alt="">
+            <img src="figures/framework.png" alt="">
           </div>
           </div>
         </div>
 
-        <h2 class="title is-3">Material-Adaptive Dynamics</h2>
+        <!-- <h2 class="title is-3">Material-Adaptive Dynamics</h2>
         <div class="content has-text-justified">
           <p> Our method can capture the dynamics of various object types such as rigid boxes, ropes, granular objects, and cloths. 
             The red dashed boxes highlight the improved dynamics prediction accuracy of our method compared to the no adaptation baseline. 
@@ -201,43 +192,6 @@
           </div>
         </div>
 
-        <h2 class="title is-3">Interactive Visualization</h2>
-        <div class="columns is-centered has-text-centered">
-          <div class="column has-text-centered">
-            <select id="interactive-buttons" multiple onchange="updateInteractive()">
-              <option value="interactive-vis-box" selected="selected">Box</option>
-              <option value="interactive-vis-rope">Rope</option>
-              <option value="interactive-vis-granular">Granular</option>
-              <option value="interactive-vis-cloth">Cloth</option>
-            </select>
-          </div>
-        </div>
-
-        <div class="columns">
-          <div class="column is-one-third has-text-centered">
-            <img id="interactive-figure-0" src="media/figures/interactive-vis-box-0.jpg" alt="">
-            <p style="text-align:center;">
-              Before push
-            </p>
-          </div>
-          <div class="column is-one-third has-text-centered">
-            <img id="interactive-figure-1" src="media/figures/interactive-vis-box-1.jpg" alt="">
-            <p style="text-align:center;">
-              After push
-            </p>
-          </div>
-          <div class="column has-text-centered">
-            <img src="media/figures/interactive-vis-legend.jpg" alt="">
-            <iframe id="interactive-html" src="media/interactive/interactive-vis-box.html" width="100%" height="345" frameborder="0"></iframe>
-            <p style="text-align:center;">
-              Dynamics prediction
-            </p>
-          </div>
-        </div>
-        
-        <!-- <div class="column has-text-centered">
-          <iframe src="media/interactive/test-3d.html" width=1000pt height=400pt frameborder="0"></iframe>
-        </div> -->
 
         <h2 class="title is-3">Adaptation Results</h2>
         <div class="content has-text-justified">
@@ -389,7 +343,7 @@
       year={2024}
     }</code></pre>
   </div>
-</section>
+</section> -->
 
 
 <footer class="footer">
@@ -398,8 +352,7 @@
       <div class="column">
         <div class="content has-text-centered">
           <p>
-            Website template borrowed from <a href="https://github.com/nerfies/nerfies.github.io">NeRFies</a> and 
-            <a href="https://voxposer.github.io/">VoxPoser</a>.
+            Website template borrowed from <a href="https://robopil.github.io/adaptigraph/">AdaptiGraph</a>.
           </p>
         </div>
       </div>
