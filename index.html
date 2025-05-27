@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="description"
-        content="Kinematics-Aware Diffusion Policy \\ with Consistent 3D Observation and Action Space \\ for Whole-Arm Robotic Manipulation">
+        content="Kinematics-Aware Diffusion Policy with Consistent 3D Observation and Action Space for Whole-Arm Robotic Manipulation">
   <meta name="keywords" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>KADP</title>
@@ -49,11 +49,11 @@
     <div class="container is-fullhd">
       <div class="columns is-centered">
         <div class="column has-text-centered">
-          <h1 class="title is-1 publication-title">Kinematics-Aware Diffusion Policy with Consistent 3D Observation and Action Space for Whole-Arm Robotic Manipulation</h1>
+          <h1 class="title is-1 publication-title">Kinematics-Aware Diffusion Policy \\ with Consistent 3D Observation and Action Space \\ for Whole-Arm Robotic Manipulation</h1>
           
           <div class="is-size-5 publication-authors">
             <span class="author-block">
-              <a>Anonymous Author(s)</a>,
+              Anonymous Author(s)
             </span>
           </div>
           
@@ -94,23 +94,7 @@
           <h2 class="title is-3">Abstract</h2>
           <div class="content has-text-justified">
             <p>
-            This paper introduces AdaptiGraph, a learning-based dynamics modeling approach 
-            that enables robots to predict, adapt to, and control a wide array of challenging 
-            deformable materials with unknown physical properties. AdaptiGraph leverages the 
-            highly flexible graph-based neural dynamics (GBND) framework, which represents 
-            material bits as particles and employs a graph neural network (GNN) to predict 
-            particle motion. Its key innovation is a unified physical property-conditioned 
-            GBND model capable of predicting the motions of diverse materials with varying 
-            physical properties without retraining. Upon encountering new materials during 
-            online deployment, AdaptiGraph utilizes a physical property optimization process 
-            for a few-shot adaptation of the model, enhancing its fit to the observed 
-            interaction data. The adapted models can precisely simulate the dynamics and predict 
-            the motion of various deformable materials, such as ropes, granular media, rigid 
-            boxes, and cloth, while adapting to different physical properties, including 
-            stiffness, granular size, and center of pressure. On prediction and manipulation 
-            tasks involving a diverse set of real-world deformable objects, our method exhibits 
-            superior prediction accuracy and task proficiency over non-material-conditioned and 
-            non-adaptive models.
+            Whole-body control of robotic manipulators with awareness of full-arm kinematics is crucial for many manipulation scenarios involving body collision avoidance or body-object interactions, which makes it insufficient to consider only the end-effector poses in policy learning. The typical approach for whole-arm manipulation is to learn actions in the robot's joint space. However, the unalignment between the joint space and actual task space (i.e., 3D space) increases the complexity of policy learning, as generalization in task space requires the policy to intrinsically understand the non-linear arm kinematics, which is difficult to learn from limited demonstrations. To address this issue, this letter proposes a kinematics-aware imitation learning framework with consistent task, observation, and action spaces, all represented in the same 3D space. Specifically, we represent both robot states and actions using a set of 3D points on the arm body, naturally aligned with the 3D point cloud observations. This spatially consistent representation improves the policy's sample efficiency and spatial generalizability while enabling full-body control. Built upon the diffusion policy, we further incorporate kinematics priors into the diffusion processes to guarantee the kinematic feasibility of output actions. The joint angle commands are finally calculated through an optimization-based whole-body inverse kinematics solver for execution. Simulation and real-world experimental results demonstrate higher success rates and stronger spatial generalizability of our approach compared to existing methods in body-aware manipulation learning.
             </p>
           </div>
           <br>
