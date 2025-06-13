@@ -129,7 +129,10 @@
 
         <br>
         <h2 class="title is-3">Real-World Task1: Pick up Cube</h2>
-        
+        <div class="content has-text-justified">
+          <p>The robot only needs to grasp the object and lift it, which is designed to specifically analyze the spatial generalizability and sample efficiency of KADP. Since accurately controlling the end-effector pose is sufficient, DP3-EE is expected to perform well due to the alignment between observation and action space.
+          </p>
+        </div>
         <div class="columns">
           <div class="column has-text-centered">
             <video id="dist1" controls muted autoplay loop width="90%">
@@ -179,7 +182,10 @@
 
         <br>
         <h2 class="title is-3">Real-World Task2: Open Door</h2>
-        
+        <div class="content has-text-justified">
+          <p>The robot should first grasp the handle and then follow a circular trajectory to open the door. Due to the narrow width of the handle, even small grasping positional error from the handle’s center will cause the gripper to lose contact with it in the subsequent motion. Controlling only the end-effector pose is also sufficient but this task is obviously more challenging compared to the pick up cube above.
+          </p>
+        </div>
         <div class="columns">
           <div class="column has-text-centered">
             <video id="dist1" controls muted autoplay loop width="90%">
@@ -228,7 +234,10 @@
 
         <br>
         <h2 class="title is-3">Real-World Task3: Put Cube in Cabinet</h2>
-        
+        <div class="content has-text-justified">
+          <p>The robot should first grasp a cube and then put it into a deep and narrow cabinet, which is designed to evaluate whole-body collision avoidance performance. The primary difficulties arise from two factors: 1) The robot must reach near the cabinet's deepest position, which requires the entire robot to remain nearly horizontal to avoid collision with the top surface; 2) The cabinet is only 4cm wider than the gripper, making the successful insertion highly sensitive to even slight positional inaccuracies.
+          </p>
+        </div>
         <div class="columns">
           <div class="column has-text-centered">
             <video id="dist1" controls muted autoplay loop width="90%">
@@ -277,7 +286,10 @@
 
         <br>
         <h2 class="title is-3">Real-World Task4: Push Button Elbow</h2>
-        
+        <div class="content has-text-justified">
+          <p>The robot is required to press a button using its elbow instead of the gripper, making it meaningless to control only the end-effector pose. Learning directly from joint space is expected to yield good performance as only the angles of the first 3 joints change during the manipulation process.
+          </p>
+        </div>
         <div class="columns">
           <div class="column has-text-centered">
             <video id="dist1" controls muted autoplay loop width="90%">
