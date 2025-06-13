@@ -127,132 +127,205 @@
           </div>
         </div>
 
+
         <h2 class="title is-3">Task1: Pick up Cube</h2>
         
         <div class="columns">
           <div class="column has-text-centered">
-            <video id="dist1" controls muted autoplay loop width="80%">
+            <video id="dist1" controls muted autoplay loop width="90%">
               <source src="videos/pick_up_cube_pose1.mp4" type="video/mp4">
             </video>
             <h2 class="title is-5">DP3-EE</h2>
           </div>
 
           <div class="column has-text-centered">
-            <video id="dist1" controls muted autoplay loop width="80%">
+            <video id="dist1" controls muted autoplay loop width="90%">
               <source src="videos/pick_up_cube_joint1.mp4" type="video/mp4">
             </video>
             <h2 class="title is-5">DP3-Joint</h2>
           </div>
 
           <div class="column has-text-centered">
-            <video id="dist1" controls muted autoplay loop width="80%">
+            <video id="dist1" controls muted autoplay loop width="90%">
               <source src="videos/pick_up_cube_node1.mp4" type="video/mp4">
             </video>
             <h2 class="title is-5">KADP (Ours)</h2>
           </div>
         </div>
-        
-        <!-- <h2 class="title is-3">Material-Adaptive Dynamics</h2>
-        <div class="content has-text-justified">
-          <p> Our method can capture the dynamics of various object types such as rigid boxes, ropes, granular objects, and cloths. 
-            The red dashed boxes highlight the improved dynamics prediction accuracy of our method compared to the no adaptation baseline. 
-          </p>
-        </div>
-        <div class="columns is-centered has-text-centered">
-          <div class="column is-fullwidth">
-            <img src="media/figures/dynamics-1-1-left.jpg" alt="">
-            <p style="text-align:center">
-              The baseline assumes that the center of pressure is at the geometric center of the box, 
-              and predicts the wrong rotation direction.
-            </p>
+
+        <div class="columns">
+          <div class="column has-text-centered">
+            <video id="dist1" controls muted autoplay loop width="90%">
+              <source src="videos/pick_up_cube_pose2.mp4" type="video/mp4">
+            </video>
+            <h2 class="title is-5">DP3-EE</h2>
           </div>
-          <div class="column is-fullwidth">
-            <img src="media/figures/dynamics-1-1-right.jpg" alt="">
-            <p style="text-align:center">
-              Our method identifies that the yarn has low stiffness, and predicts more bending effects.
-            </p>
+
+          <div class="column has-text-centered">
+            <video id="dist1" controls muted autoplay loop width="90%">
+              <source src="videos/pick_up_cube_joint2.mp4" type="video/mp4">
+            </video>
+            <h2 class="title is-5">DP3-Joint</h2>
           </div>
-        </div>
-        <div class="columns is-centered has-text-centered">
-          <div class="column is-fullwidth">
-            <img src="media/figures/dynamics-1-2-left.jpg" alt="">
-            <p style="text-align:center">
-              The baseline assumes that the center of pressure is at the geometric center of the box, 
-              and predicts the wrong rotation direction.
-            </p>
-          </div>
-          <div class="column is-fullwidth">
-            <img src="media/figures/dynamics-1-2-right.jpg" alt="">
-            <p style="text-align:center">
-              Our method identifies that the polymer rope has high stiffness, and predictes less bending effects.
-            </p>
-          </div>
-        </div>
-        <div class="columns is-centered has-text-centered">
-          <div class="column is-fullwidth">
-            <img src="media/figures/dynamics-1-3-left.jpg" alt="">
-            <p style="text-align:center">
-              Our method identifies that the coffee beans have small granularity, and predicts more stacking effects.
-            </p>
-          </div>
-          <div class="column is-fullwidth">
-            <img src="media/figures/dynamics-1-3-right.jpg" alt="">
-            <p style="text-align:center">
-              The baseline predicts insufficient stretching and shearing effects for the low-stiffness modal fabric cloth.
-            </p>
-          </div>
-        </div>
-        <div class="columns is-centered has-text-centered">
-          <div class="column is-fullwidth">
-            <img src="media/figures/dynamics-1-4-left.jpg" alt="">
-            <p style="text-align:center">
-              Our method identifies that the chocolates have large granularity, and predicts less stacking effects.
-            </p>
-          </div>
-          <div class="column is-fullwidth">
-            <img src="media/figures/dynamics-1-4-right.jpg" alt="">
-            <p style="text-align:center">
-              The baseline predicts too much stretching effects for the high-stiffness cotton cloth.
-            </p>
+
+          <div class="column has-text-centered">
+            <video id="dist1" controls muted autoplay loop width="90%">
+              <source src="videos/pick_up_cube_node2.mp4" type="video/mp4">
+            </video>
+            <h2 class="title is-5">KADP (Ours)</h2>
           </div>
         </div>
 
 
-        <h2 class="title is-3">Adaptation Results</h2>
-        <div class="content has-text-justified">
-          <p> For unseen instances at test time, we perform online inverse optimization to refine their physical property variables based on the physical behaviors observed during interactions.
-            Our estimation rankings align with human impressions of these objects.
-          </p>
-        </div>
-        <div class="columns is-centered has-text-centered">
-          <div class="column is-fullwidth">
-            <img src="media/figures/estimation.jpg" alt="">
-          </div>
-        </div>
 
-        <h2 class="title is-3">Planning</h2>
-        <div class="content has-text-justified">
-          <p> Finally, our method enhances model-based planning for manipulation of different materials. 
-            The estimated physical property variable allows us to find more efficient actions, resulting in less steps to successfully achieve the target configuration and with lower final errors.
-          </p>
-        </div>
+        <h2 class="title is-3">Task2: Open Door</h2>
         
         <div class="columns">
           <div class="column has-text-centered">
-            <h2 class="title is-5">Box pushing - w/o Adaptation</h2>
-            <video id="dist1" controls muted autoplay loop width="99%">
-              <source src="media/videos/planning-box-1-baseline.mp4" type="video/mp4">
+            <video id="dist1" controls muted autoplay loop width="90%">
+              <source src="videos/open_door_pose1.mp4" type="video/mp4">
             </video>
+            <h2 class="title is-5">DP3-EE</h2>
           </div>
 
           <div class="column has-text-centered">
-            <h2 class="title is-5">Box pushing - Ours</h2>
-            <video id="dist2" controls muted autoplay loop width="99%">
-              <source src="media/videos/planning-box-1-ours.mp4" type="video/mp4">
+            <video id="dist1" controls muted autoplay loop width="90%">
+              <source src="videos/open_door_joint1.mp4" type="video/mp4">
             </video>
+            <h2 class="title is-5">DP3-Joint</h2>
+          </div>
+
+          <div class="column has-text-centered">
+            <video id="dist1" controls muted autoplay loop width="90%">
+              <source src="videos/open_door_node1.mp4" type="video/mp4">
+            </video>
+            <h2 class="title is-5">KADP (Ours)</h2>
           </div>
         </div>
 
+        <div class="columns">
+          <div class="column has-text-centered">
+            <video id="dist1" controls muted autoplay loop width="90%">
+              <source src="videos/open_door_pose2.mp4" type="video/mp4">
+            </video>
+            <h2 class="title is-5">DP3-EE</h2>
+          </div>
+
+          <div class="column has-text-centered">
+            <video id="dist1" controls muted autoplay loop width="90%">
+              <source src="videos/open_door_joint2.mp4" type="video/mp4">
+            </video>
+            <h2 class="title is-5">DP3-Joint</h2>
+          </div>
+
+          <div class="column has-text-centered">
+            <video id="dist1" controls muted autoplay loop width="90%">
+              <source src="videos/open_door_node2.mp4" type="video/mp4">
+            </video>
+            <h2 class="title is-5">KADP (Ours)</h2>
+          </div>
+        </div>
+
+
+        <h2 class="title is-3">Task3: Put Cube in Cabinet</h2>
+        
+        <div class="columns">
+          <div class="column has-text-centered">
+            <video id="dist1" controls muted autoplay loop width="90%">
+              <source src="videos/put_item_pose1.mp4" type="video/mp4">
+            </video>
+            <h2 class="title is-5">DP3-EE</h2>
+          </div>
+
+          <div class="column has-text-centered">
+            <video id="dist1" controls muted autoplay loop width="90%">
+              <source src="videos/put_item_joint1.mp4" type="video/mp4">
+            </video>
+            <h2 class="title is-5">DP3-Joint</h2>
+          </div>
+
+          <div class="column has-text-centered">
+            <video id="dist1" controls muted autoplay loop width="90%">
+              <source src="videos/put_item_node1.mp4" type="video/mp4">
+            </video>
+            <h2 class="title is-5">KADP (Ours)</h2>
+          </div>
+        </div>
+
+        <div class="columns">
+          <div class="column has-text-centered">
+            <video id="dist1" controls muted autoplay loop width="90%">
+              <source src="videos/put_item_pose2.mp4" type="video/mp4">
+            </video>
+            <h2 class="title is-5">DP3-EE</h2>
+          </div>
+
+          <div class="column has-text-centered">
+            <video id="dist1" controls muted autoplay loop width="90%">
+              <source src="videos/put_item_joint2.mp4" type="video/mp4">
+            </video>
+            <h2 class="title is-5">DP3-Joint</h2>
+          </div>
+
+          <div class="column has-text-centered">
+            <video id="dist1" controls muted autoplay loop width="90%">
+              <source src="videos/put_item_node2.mp4" type="video/mp4">
+            </video>
+            <h2 class="title is-5">KADP (Ours)</h2>
+          </div>
+        </div>
+
+
+        <h2 class="title is-3">Task4: Push Button Elbow</h2>
+        
+        <div class="columns">
+          <div class="column has-text-centered">
+            <video id="dist1" controls muted autoplay loop width="90%">
+              <source src="videos/push_button_pose1.mp4" type="video/mp4">
+            </video>
+            <h2 class="title is-5">DP3-EE</h2>
+          </div>
+
+          <div class="column has-text-centered">
+            <video id="dist1" controls muted autoplay loop width="90%">
+              <source src="videos/push_button_joint1.mp4" type="video/mp4">
+            </video>
+            <h2 class="title is-5">DP3-Joint</h2>
+          </div>
+
+          <div class="column has-text-centered">
+            <video id="dist1" controls muted autoplay loop width="90%">
+              <source src="videos/push_button_node1.mp4" type="video/mp4">
+            </video>
+            <h2 class="title is-5">KADP (Ours)</h2>
+          </div>
+        </div>
+
+        <div class="columns">
+          <div class="column has-text-centered">
+            <video id="dist1" controls muted autoplay loop width="90%">
+              <source src="videos/push_button_pose2.mp4" type="video/mp4">
+            </video>
+            <h2 class="title is-5">DP3-EE</h2>
+          </div>
+
+          <div class="column has-text-centered">
+            <video id="dist1" controls muted autoplay loop width="90%">
+              <source src="videos/push_button_joint2.mp4" type="video/mp4">
+            </video>
+            <h2 class="title is-5">DP3-Joint</h2>
+          </div>
+
+          <div class="column has-text-centered">
+            <video id="dist1" controls muted autoplay loop width="90%">
+              <source src="videos/push_button_node2.mp4" type="video/mp4">
+            </video>
+            <h2 class="title is-5">KADP (Ours)</h2>
+          </div>
+        </div>
+
+
+<!-- 
         <div class="columns">
           <div class="column has-text-centered">
               <h2 class="title is-5">Rope straightening - w/o Adaptation</h2>
